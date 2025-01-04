@@ -35,5 +35,5 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
+    ArtifactName: '/bin/Debug/net6.0/pipelines-dotnet-core.dll'
     publishLocation: 'Container'
