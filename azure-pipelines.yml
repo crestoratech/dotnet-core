@@ -18,8 +18,7 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-jobs:
- - job: BUILD
-    - task: DotNetCoreCLI@2
-      inputs:
-        command: 'build'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    requestTimeout: 300
